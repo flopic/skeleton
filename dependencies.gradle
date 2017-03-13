@@ -1,4 +1,17 @@
 ext.versions = [
+
+    versionName                     : '1.0.0',
+    versionCode                     : 1,
+
+    appID                           : 'com.home.flopic.skeleton',
+
+    minSdk                          : 15,
+    targetSdk                       : 25,
+    compileSdk                      : 25,
+
+    buildTools                      : '25.0.1',
+    javaVersion                     : JavaVersion.VERSION_1_8,
+
     timber                          : '4.5.1'
 ]
 
