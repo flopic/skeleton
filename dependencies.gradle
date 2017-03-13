@@ -18,7 +18,8 @@ ext.versions = [
     constraintLayout                : '1.0.2',
     timber                          : '4.5.1',
     junit                           : '4.12',
-    espresso                        : '2.2.2'
+    espresso                        : '2.2.2',
+    dagger                          : '2.10-rc4',
 ]
 
 ext.gradlePlugins = [
@@ -40,5 +41,9 @@ ext.libraries = [
 
     //Test
     junit                           : "junit:junit:$versions.junit",
-    espresso                        : "com.android.support.test.espresso:espresso-core:$versions.espresso"
+    espresso                        : "com.android.support.test.espresso:espresso-core:$versions.espresso",
+
+    //Dagger
+    dagger                          : "com.google.dagger:dagger:$versions.dagger",
+    daggerCompiler                 : "com.google.dagger:dagger-compiler:$versions.dagger"
 ]

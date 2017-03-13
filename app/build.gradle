@@ -28,13 +28,13 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    //Test
+    // Test
     testCompile libraries.junit
     androidTestCompile(libraries.espresso) {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
 
-    //Support
+    // Support
     compile libraries.supportAnnotations
     compile libraries.supportAppCompat
     compile libraries.supportDesign
@@ -44,4 +44,8 @@ dependencies {
 
     // Logger
     compile libraries.timber;
+
+    // Dagger
+    compile libraries.dagger
+    annotationProcessor libraries.daggerCompiler
 }
