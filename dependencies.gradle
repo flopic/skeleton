@@ -12,13 +12,22 @@ ext.versions = [
     buildTools                      : '25.0.1',
     javaVersion                     : JavaVersion.VERSION_1_8,
 
+    androidGradlePlugin             : '2.3.0',
+
     supportLibs                     : '25.2.0',
+    constraintLayout                : '1.0.2',
     timber                          : '4.5.1',
-    constraintLayout                : '1.0.2'
+    junit                           : '4.12',
+    espresso                        : '2.2.2'
+]
+
+ext.gradlePlugins = [
+    tools                           : "com.android.tools.build:gradle:$versions.androidGradlePlugin",
 ]
 
 ext.libraries = [
 
+    //Support
     supportAnnotations              : "com.android.support:support-annotations:$versions.supportLibs",
     supportAppCompat                : "com.android.support:appcompat-v7:$versions.supportLibs",
     supportDesign                   : "com.android.support:design:$versions.supportLibs",
@@ -26,5 +35,10 @@ ext.libraries = [
     supportRecyclerView             : "com.android.support:recyclerview-v7:$versions.supportLibs",
     supportConstraintLayout         : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
 
+    //Timber
     timber                          : "com.jakewharton.timber:timber:$versions.timber",
+
+    //Test
+    junit                           : "junit:junit:$versions.junit",
+    espresso                        : "com.android.support.test.espresso:espresso-core:$versions.espresso"
 ]
