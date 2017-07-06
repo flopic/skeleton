@@ -19,7 +19,7 @@ ext.versions = [
     timber                          : '4.5.1',
     junit                           : '4.12',
     espresso                        : '2.2.2',
-    dagger                          : '2.10-rc4',
+    dagger                          : '2.11',
 ]
 
 ext.gradlePlugins = [
